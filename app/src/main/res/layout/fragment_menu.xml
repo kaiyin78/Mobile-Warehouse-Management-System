@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment">
+
+    <Button
+        android:id="@+id/btnToRackOut"
+        android:layout_width="108dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="60dp"
+
+        android:foreground="@drawable/rackout"
+        android:text="Rack Out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnToRackIn"
+        app:layout_constraintTop_toBottomOf="@+id/btnToProductList" />
+
+    <Button
+        android:id="@+id/btnToReceiveProduct"
+        android:layout_width="108dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="180dp"
+
+        android:foreground="@drawable/receiveproduct"
+        android:text="Product"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnToReport"
+        android:layout_width="108dp"
+        android:layout_height="91dp"
+
+        android:layout_marginStart="92dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="168dp"
+        android:background="#D1CCCC"
+        android:foreground="@drawable/report"
+        android:text="Report"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnToRackIn"
+        app:layout_constraintTop_toBottomOf="@+id/btnToRackOut"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnToRackManagement"
+        android:layout_width="108dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="216dp"
+
+        android:foreground="@drawable/rack"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnToReceiveProduct"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnToProductList"
+        android:layout_width="108dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="60dp"
+
+        android:foreground="@drawable/productlist"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnToReceiveProduct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnToRackIn"
+        android:layout_width="108dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:foreground="@drawable/testrack_in"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnToReceiveProduct" />
+</androidx.constraintlayout.widget.ConstraintLayout>

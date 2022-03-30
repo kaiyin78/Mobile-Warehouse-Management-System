@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/menuFragment">
+    <fragment
+        android:id="@+id/receiveProduct3"
+        android:name="com.example.externalactivity.ReceiveProduct"
+        android:label="Product Category"
+        tools:layout="@layout/fragment_receive_product">
+        <action
+            android:id="@+id/action_receiveProduct3_to_registerNewCategory"
+            app:destination="@id/registerNewCategory"
+            app:popUpTo="@id/registerNewCategory"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_receiveProduct3_to_receiveProductDetails3"
+            app:destination="@id/receiveProductDetails3" />
+        <action
+            android:id="@+id/action_receiveProduct3_to_productList"
+            app:destination="@id/productList"
+            app:popUpTo="@id/productList"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_receiveProduct3_to_productStatus"
+            app:destination="@id/productStatus"
+            app:popUpTo="@id/productStatus"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerNewCategory"
+        android:name="com.example.externalactivity.RegisterNewCategory"
+        android:label="Register New Category"
+        tools:layout="@layout/fragment_register_new_category" />
+    <fragment
+        android:id="@+id/receiveProductDetails3"
+        android:name="com.example.externalactivity.ReceiveProductDetails"
+        android:label="Receive Product"
+        tools:layout="@layout/fragment_receive_product_details" />
+    <fragment
+        android:id="@+id/productList"
+        android:name="com.example.externalactivity.ProductList"
+        android:label="Product Category"
+        tools:layout="@layout/fragment_product_list">
+        <action
+            android:id="@+id/action_productList_to_registerNewCategory"
+            app:destination="@id/registerNewCategory"
+            app:popUpTo="@id/registerNewCategory"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_productList_to_productListManagement"
+            app:destination="@id/productListManagement" />
+        <action
+            android:id="@+id/action_productList_to_receiveProductDetails3"
+            app:destination="@id/receiveProductDetails3"
+            app:popUpTo="@id/receiveProductDetails3"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/productListManagement"
+        android:name="com.example.externalactivity.ProductListManagement"
+        android:label="Product List"
+        tools:layout="@layout/fragment_product_list_management">
+        <action
+            android:id="@+id/action_productListManagement_to_productStatus"
+            app:destination="@id/productStatus" />
+        <action
+            android:id="@+id/action_productListManagement_to_productEditDetails"
+            app:destination="@id/productEditDetails"
+            app:popUpTo="@id/productEditDetails"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_productListManagement_to_productList"
+            app:destination="@id/productList"
+            app:popUpTo="@id/productList"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/productEditDetails"
+        android:name="com.example.externalactivity.ProductEditDetails"
+        android:label="Product Edit"
+        tools:layout="@layout/fragment_product_edit_details" />
+    <fragment
+        android:id="@+id/productStatus"
+        android:name="com.example.externalactivity.ProductStatus"
+        android:label="Product Status"
+        tools:layout="@layout/fragment_product_status">
+        <action
+            android:id="@+id/action_productStatus_to_rackInFragment"
+            app:destination="@id/rackInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rackInFragment"
+        android:name="com.example.externalactivity.RackInFragment"
+        android:label="RACK IN"
+        tools:layout="@layout/fragment_rack_in">
+        <action
+            android:id="@+id/action_rackInFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.externalactivity.MenuFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_receiveProduct3"
+            app:destination="@id/receiveProduct3" />
+        <action
+            android:id="@+id/action_menuFragment_to_reportFragment"
+            app:destination="@id/reportFragment"
+            app:popUpTo="@id/reportFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_menuFragment_to_rackManagement"
+            app:destination="@id/rackManagement"
+            app:popUpTo="@id/rackManagement"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_menuFragment_to_productList"
+            app:destination="@id/productList"
+            app:popUpTo="@id/productList"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_menuFragment_to_productList2"
+            app:destination="@id/productList"
+            app:popUpTo="@id/productList"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_menuFragment_to_productStatus"
+            app:destination="@id/productStatus"
+            app:popUpTo="@id/productStatus"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_menuFragment_to_rackOutFragment"
+            app:destination="@id/rackOutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.externalactivity.ReportFragment"
+        android:label="Report"
+        tools:layout="@layout/fragment_report">
+        <action
+            android:id="@+id/action_reportFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rackManagement"
+        android:name="com.example.externalactivity.RackManagement"
+        android:label="Rack Management"
+        tools:layout="@layout/fragment_rack_management">
+        <action
+            android:id="@+id/action_rackManagement_to_addRack"
+            app:destination="@id/addRack"
+            app:popUpTo="@id/addRack"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_rackManagement_to_editRack"
+            app:destination="@id/editRack"
+            app:popUpTo="@id/editRack"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_rackManagement_to_deleteRack"
+            app:destination="@id/deleteRack"
+            app:popUpTo="@id/deleteRack"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_rackManagement_to_scanRack"
+            app:destination="@id/scanRack"
+            app:popUpTo="@id/scanRack"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRack"
+        android:name="com.example.externalactivity.AddRack"
+        android:label="Add Rack"
+        tools:layout="@layout/fragment_add_rack">
+        <action
+            android:id="@+id/action_addRack_to_rackManagement"
+            app:destination="@id/rackManagement"
+            app:popUpTo="@id/rackManagement"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/editRack"
+        android:name="com.example.externalactivity.EditRack"
+        android:label="Edit Rack"
+        tools:layout="@layout/fragment_edit_rack">
+        <action
+            android:id="@+id/action_editRack_to_rackManagement"
+            app:destination="@id/rackManagement"
+            app:popUpTo="@id/rackManagement"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanRack"
+        android:name="com.example.externalactivity.ScanRack"
+        android:label="Check Rack"
+        tools:layout="@layout/fragment_scan_rack">
+        <action
+            android:id="@+id/action_scanRack_to_rackManagement"
+            app:destination="@id/rackManagement"
+            app:popUpTo="@id/rackManagement"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteRack"
+        android:name="com.example.externalactivity.DeleteRack"
+        android:label="Delete Rack"
+        tools:layout="@layout/fragment_delete_rack">
+        <action
+            android:id="@+id/action_deleteRack_to_rackManagement"
+            app:destination="@id/rackManagement"
+            app:popUpTo="@id/rackManagement"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/rackOutFragment"
+        android:name="com.example.externalactivity.RackOutFragment"
+        android:label="Rack Out"
+        tools:layout="@layout/fragment_rack_out">
+        <action
+            android:id="@+id/action_rackOutFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.example.externalactivity.RegisterActivity"
+        android:label="Register Account"
+        tools:layout="@layout/activity_register" />
+    <activity
+        android:id="@+id/forgetPasswordActivity"
+        android:name="com.example.externalactivity.ForgetPasswordActivity"
+        android:label="Forgot Password"
+        tools:layout="@layout/activity_forget_password" />
+    <activity
+        android:id="@+id/menuActivity"
+        android:name="com.example.externalactivity.MenuActivity"
+        android:label="Login"
+        tools:layout="@layout/activity_main" /><![CDATA[
+
+    />
+
+]]>
+</navigation>
