@@ -1,2 +1,13 @@
 # Mobile-Warehouse-Management-System
 Group Assignment on Android Development using Kotlin
+
+
+Overview of Application
+
+
+![277151490_759351211615658_1423279987720758156_n](https://user-images.githubusercontent.com/43575835/160835989-3a403927-850e-4682-92d2-e8463b7f6af1.jpg)
+![276323749_396353668992296_845896904823789810_n](https://user-images.githubusercontent.com/43575835/160836098-9f0a3b35-0886-4178-bacd-cee5e2b3fbac.jpg)
+
+![277249244_1167041377166472_3987369948073476760_n](https://user-images.githubusercontent.com/43575835/160836110-81307d58-9e32-445d-9eb7-6b843f1d6d9f.jpg)
+![275560028_7191046904269870_3149490800313907520_n](https://user-images.githubusercontent.com/43575835/160836115-48d4e4f6-0279-4e0d-8476-b4ab5f6f3667.jpg)
+![275958436_675892637055943_929871290844303430_n](https://user-images.githubusercontent.com/43575835/160836118-78f0e9f2-fc3e-4110-ac2e-4286c018fda2.jpg)
